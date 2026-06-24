@@ -33,9 +33,9 @@ const Signature = ({ nextStep }) => {
       setLoading(true);
 
       await axios.post(
-        "https://jsonplaceholder.typicode.com/posts",
-        formData
-      );
+  "http://localhost:5000/api/loan/apply",
+  formData
+);
 
       alert(
         "Application Submitted Successfully!"
